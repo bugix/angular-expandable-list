@@ -1,5 +1,5 @@
 /**
- * angular2-expandable-list
+ * angular-expandable-list
  *
  * Copyright 2017, @andreasonny83, All rights reserved.
  *
@@ -34,9 +34,9 @@ module.exports = {
     output: {
       path: helpers.root('bundles'),
       publicPath: '/',
-      filename: 'angular2-expandable-list.umd.js',
+      filename: 'angular-expandable-list.umd.js',
       libraryTarget: 'umd',
-      library: 'angular2-expandable-list'
+      library: 'angular-expandable-list'
     },
 
     // require those dependencies but don't bundle them

@@ -1,20 +1,9 @@
-[![Build Status](https://travis-ci.org/andreasonny83/angular2-expandable-list.svg?branch=master)](https://travis-ci.org/andreasonny83/angular2-expandable-list)
-[![npm version](https://badge.fury.io/js/angular2-expandable-list.svg)](https://badge.fury.io/js/angular2-expandable-list)
-[![Coverage Status](https://coveralls.io/repos/github/andreasonny83/angular2-expandable-list/badge.svg?branch=master)](https://coveralls.io/github/andreasonny83/angular2-expandable-list?branch=master)
-[![npm](https://img.shields.io/npm/dm/angular2-expandable-list.svg)](https://www.npmjs.com/package/angular2-expandable-list)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+# angular-expandable-list
 
-# angular2-expandable-list
+> Expandable lists made easy for Angular
 
-> Expandable lists made easy for Angular2+
-
-Angular2 Expandable List is an HTML `<angular2-expandable-list>` tag enhanced with styling and animation.
-now compatible with Angular4 too.
-
-**Plunker DEMOs:**
-
-*   [Angular2 Expandable List with Angular2](https://embed.plnkr.co/uAPJq0/)
+Angular Expandable List is an HTML `<angular-expandable-list>` tag enhanced with styling and animation.
+now compatible with Angular9 too.
 
 ![screenshot](http://i.imgur.com/Qa402ev.gif)
 
@@ -39,13 +28,13 @@ now compatible with Angular4 too.
 
   ```bash
   # To get the latest stable version and update package.json file:
-  $ npm install angular2-expandable-list --save
+  $ npm install angular-expandable-list --save
   ```
 
   or `yarn` with:
 
   ```bash
-  $ yarn add angular2-expandable-list
+  $ yarn add angular-expandable-list
   ```
 
 ## Setup
@@ -55,7 +44,7 @@ If you are using System.js you may want to add this into `map` and `package` con
 ```json
 {
   "map": {
-    "angular2-expandable-list": "node_modules/angular2-expandable-list/bundles/angular2-expandable-list.umd.js"
+    "angular-expandable-list": "node_modules/angular-expandable-list/bundles/angular-expandable-list.umd.js"
   }
 }
 ```
@@ -72,17 +61,17 @@ import '@angular/http';
 
 // Third parties packages
 import 'rxjs';
-import 'angular2-expandable-list';
+import 'angular-expandable-list';
 ```
 
-angular2-expandable-list class is an Angular2 module therefore,
+angular-expandable-list class is an Angular2 module therefore,
 it needs to be registered in the modules array (encouraged way):
 
 ```js
 // app.module.ts
 import { NgModule }             from '@angular/core';
 import { BrowserModule }        from '@angular/platform-browser';
-import { ExpandableListModule } from 'angular2-expandable-list';
+import { ExpandableListModule } from 'angular-expandable-list';
 import { AppComponent }         from './app.component';
 
 @NgModule({
@@ -125,7 +114,7 @@ export class AppComponent  { }
 
 ### List and list-item
 
-The Angular2-expandable-list is composed of a `<expandable-list>` wrapper and
+The angular-expandable-list is composed of a `<expandable-list>` wrapper and
 one or more `<expandable-list-item>`.
 Start your list creating these 2 html tags in your template like this:
 
@@ -211,7 +200,7 @@ your `<expandable-list>`.
 
 ## Demo App
 
-Have a look at the [demo](https://github.com/andreasonny83/angular2-expandable-list/tree/master/demo)
+Have a look at the [demo](https://github.com/andreasonny83/angular-expandable-list/tree/master/demo)
 available in this repository for a real Angular2 application using the Angular2-Cookie-Law library.
 
 From your terminal all the Node dependencies using npm:
@@ -289,9 +278,9 @@ export class AppComponent {
 }
 ```
 
-## Angular 4
+## Angular 9
 
-This module will work with Angular 4 projects but requires `@angular/animations`
+This module will work with Angular 9 projects but requires `@angular/animations`
 to be included in your project as the Angular animations are not part of the `@angular/core`
 library starting from the version >=4.
 
@@ -311,7 +300,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule, // Angular 4 Only
+    BrowserAnimationsModule, // Angular 4+ Only
   ],
 })
 export class AppModule { }
@@ -331,10 +320,6 @@ with commitizen node package integrated in this repository.
 1.  Push to the branch: `git push origin my-new-feature`
 1.  Submit a pull request :sunglasses:
 
-## Changelog
-
-Changelog available [here](https://github.com/andreasonny83/angular2-expandable-list/releases)
-
 ## License
 
-[MIT License](https://github.com/andreasonny83/angular2-expandable-list/blob/master/LICENSE) © Andrea SonnY
+[MIT License](https://github.com/bugix/angular-expandable-list/blob/master/LICENSE) © Andrea SonnY

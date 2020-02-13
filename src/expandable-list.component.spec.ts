@@ -1,5 +1,5 @@
 /**
- * angular2-expandable-list
+ * angular-expandable-list
  *
  * Copyright 2017, @andreasonny83, All rights reserved.
  *
