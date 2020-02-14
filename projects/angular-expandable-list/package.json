@@ -1,0 +1,20 @@
+{
+  "name": "angular-expandable-list",
+  "version": "0.0.1",
+  "description": "Expandable lists made easy for Angular2+",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bugix/angular-expandable-list.git"
+  },
+  "author": "Andrea Sonny <andreasonny83@gmail.com> (https://github.com/andreasonny83)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bugix/angular-expandable-list/issues"
+  },
+  "homepage": "https://github.com/bugix/angular-expandable-list#readme",
+  "peerDependencies": {
+    "@angular/common": "^9.0.1",
+    "@angular/core": "^9.0.1",
+    "tslib": "^1.10.0"
+  }
+}
